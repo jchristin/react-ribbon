@@ -1,3 +1,12 @@
+@ribbon-height: 100px;
+@ribbon-background: #1e292c;
+@ribbon-color: #fff;
+@tile-background: #1e292c;
+@tile-color: #fff;
+@tile-hover-background: #85a0a7;
+@tile-hover-color: #0e1b1f;
+@tile-border-color: #4e5658;
+@brand: #f26101;
 .clearfix() {
 	&:before, &:after {
 		content: " ";
@@ -19,9 +28,9 @@
 
 .ribbon {
 	.clearfix;
-	height: 100px;
-	background: #1e292c;
-	color: #fff;
+	height: @ribbon-height;
+	background: @ribbon-background;
+	color: @ribbon-color;
 	img {
 		width: 100%;
 	}
@@ -31,7 +40,7 @@
 		height: 100%;
 		.noselect;
 		cursor: pointer;
-		border-right: 1px solid #4e5658;
+		border-right: 1px solid @tile-border-color;
 		&:first-child {
 			border: 0;
 		}
@@ -39,23 +48,23 @@
 	.content {
 		display: table-cell;
 		vertical-align: middle;
-		background: #1e292c;
 		text-align: center;
-		color: #fff;
+		background: @tile-background;
+		color: @tile-color;
 		font-size: 20px;
 		&:hover {
-			background: @lightgray;
-			color: @darktitle;
+			background: @tile-hover-background;
+			color: @tile-hover-color;
 		}
 		&.prev {
-			background: @orange;
+			background: @brand;
+			color: @tile-color;
 			font-size: 44px;
-			color: #fff;
 		}
 		&.up {
-			background: @orange;
+			background: @brand;
+			color: @tile-color;
 			font-size: 44px;
-			color: #fff;
 		}
 		&.next {
 			font-size: 26px;
