@@ -1,0 +1,65 @@
+.noselect {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.ribbon {
+  height: 100px;
+  background: #1e292c;
+  color: #ffffff;
+}
+.ribbon:before,
+.ribbon:after {
+  content: " ";
+  display: table;
+}
+.ribbon:after {
+  clear: both;
+}
+.ribbon img {
+  width: 100%;
+}
+.ribbon .tile {
+  display: table;
+  float: left;
+  height: 100%;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+  border-right: 1px solid #4e5658;
+}
+.ribbon .tile:first-child {
+  border: 0;
+}
+.ribbon .content {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  background: #1e292c;
+  color: #ffffff;
+  font-size: 20px;
+}
+.ribbon .content:hover {
+  background: #85a0a7;
+  color: #0e1b1f;
+}
+.ribbon .content.prev {
+  background: #f26101;
+  color: #ffffff;
+  font-size: 44px;
+}
+.ribbon .content.up {
+  background: #f26101;
+  color: #ffffff;
+  font-size: 44px;
+}
+.ribbon .content.next {
+  font-size: 26px;
+}
