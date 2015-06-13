@@ -1,0 +1,31 @@
+{
+  "name": "react-ribbon",
+  "version": "0.1.0",
+  "description": "A responsive toolbar built with React",
+  "main": "lib/index.js",
+  "scripts": {
+    "less": "lessc lib/ribbon.less > lib/ribbon.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/julbaxter/react-ribbon.git"
+  },
+  "keywords": [
+    "react"
+  ],
+  "author": "Julien Christin <jul.christin@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/julbaxter/react-ribbon/issues"
+  },
+  "homepage": "https://github.com/julbaxter/react-ribbon#readme",
+  "dependencies": {
+    "lodash": "^3.5.0"
+  },
+  "peerDependencies": {
+    "react": ">=0.12.0"
+  },
+  "devDependencies": {
+    "less": "^2.4.0"
+  }
+}

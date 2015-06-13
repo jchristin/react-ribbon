@@ -1,0 +1,45 @@
+.ribbon {
+	.clearfix;
+	height: 100px;
+	background: #1e292c;
+	color: #fff;
+	img {
+		width: 100%;
+	}
+	.tile {
+		display: table;
+		float: left;
+		height: 100%;
+		.noselect;
+		cursor: pointer;
+		border-right: 1px solid #4e5658;
+		&:first-child {
+			border: 0;
+		}
+	}
+	.content {
+		display: table-cell;
+		vertical-align: middle;
+		background: #1e292c;
+		text-align: center;
+		color: #fff;
+		font-size: 20px;
+		&:hover {
+			background: @lightgray;
+			color: @darktitle;
+		}
+		&.prev {
+			background: @orange;
+			font-size: 44px;
+			color: #fff;
+		}
+		&.up {
+			background: @orange;
+			font-size: 44px;
+			color: #fff;
+		}
+		&.next {
+			font-size: 26px;
+		}
+	}
+}
